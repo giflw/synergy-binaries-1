@@ -21,3 +21,5 @@ mkdir -p builds
 
 cp build-ubuntu/*.deb "builds/synergy-master-stable-${VERSION}-Linux-x86_64.deb"
 cp build-centos/*.rpm "builds/synergy-master-stable-${VERSION}-Linux-x86_64.rpm"
+
+ls -alF builds/
