@@ -1,0 +1,4 @@
+synergy/
+build-centos/
+build-ubuntu/
+*.log
