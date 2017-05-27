@@ -2,7 +2,7 @@
 
 VERSION="1.8.8"
 
-git clone --depth=1 git@github.com:symless/synergy.git
+git clone --depth=1 https://github.com/symless/synergy.git
 
 ## Build Ubuntu version
 docker build -t synergy-ubuntu -f ubuntu/Dockerfile .
