@@ -1,0 +1,7 @@
+= Synergy Binaries
+
+image:https://travis-ci.org/ldez/synergy-binaries.svg?branch=master["Build Status", link="https://travis-ci.org/ldez/synergy-binaries"]
+
+Build the binaries of link:https://github.com/symless/synergy[Synergy].
+
+To get the binaries, go here: link:https://github.com/ldez/synergy-binaries/releases[releases] .
