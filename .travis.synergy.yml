@@ -1,0 +1,43 @@
+# This configuration can be use with a fork of git@github.com:symless/synergy.git
+language: cpp
+
+sudo: false
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+env:
+  global:
+  - QT_SELECT="4"
+
+addons:
+  apt:
+    packages:
+    - cmake
+    - make
+    - g++
+    - xorg-dev
+    - libqt4-dev
+    - libcurl4-openssl-dev
+    - libavahi-compat-libdnssd-dev
+    - libssl-dev
+    - libx11-dev
+    - lintian
+
+script:
+- ./hm.sh genlist
+- ./hm.sh conf -g1
+- ./hm.sh build
+- ./hm.sh package deb
+- ls -a bin/
+
+# deploy:
+#   - provider: releases
+#     api_key: ${GITHUB_TOKEN}
+#     file: bin/synergy-*-Linux-x86_64.deb
+#     skip_cleanup: true
+#     file_glob: true
+#     on:
+#       tags: true
