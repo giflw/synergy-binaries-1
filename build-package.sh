@@ -11,10 +11,10 @@ mkdir -p build-ubuntu
 docker run --rm -v "$PWD/build-ubuntu":'/src/synergy/bin' synergy-ubuntu ./build.sh
 
 ## Build Centos version
-# docker build -t synergy-centos -f centos/Dockerfile .
-# rm -rf build-centos
-# mkdir -p build-centos
-# docker run --rm -v "$PWD/build-centos":'/src/synergy/bin' synergy-centos ./build.sh
+docker build -t synergy-centos -f centos/Dockerfile .
+rm -rf build-centos
+mkdir -p build-centos
+docker run --rm -v "$PWD/build-centos":'/src/synergy/bin' synergy-centos ./build.sh
 
 rm -rf builds
 mkdir -p builds
