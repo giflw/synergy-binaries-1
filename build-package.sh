@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="1.8.8"
+VERSION="1.9.0-snapshot"
 
 git clone --depth=1 https://github.com/symless/synergy.git
 
